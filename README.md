@@ -1,6 +1,11 @@
 # TimeSheets3
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
+[Angular](https://angular.io/) 7+ version of https://github.com/BjoernKW/TimeSheets,
+a time sheet report generation tool for [mite](https://mite.yo.lk/).
+
+## Usage
+
+Go to https://bjoernkw.github.io/TimeSheets3/ .
 
 ## Development server
 
@@ -22,6 +27,17 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Built With
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* [Angular](https://angular.io/)
+* [Bootstrap](https://getbootstrap.com)
+* JavaScript
+* [mite](https://mite.yo.lk/)
+
+## License
+
+[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+
+## Authors
+
+* **[Björn Wilmsmann](https://bjoernkw.com)**
