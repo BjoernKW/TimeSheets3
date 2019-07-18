@@ -40,4 +40,4 @@ jobs:
       - run: npm run build -- --base-href /TimeSheets3/ --deploy-url /TimeSheets3/ --prod
 
       # deploy
-      - run: npx angular-cli-ghpages --dir=dist/TimeSheets3
+      - run: npx angular-cli-ghpages --dir=dist/TimeSheets3 --repo=https://GH_TOKEN@github.com/BjoernKW/TimeSheets3.git --name="BjoernKW" --email=bjoern@bjoernkw.com
