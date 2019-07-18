@@ -2,15 +2,6 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-workflows:
-  version: 2
-  main:
-    jobs:
-      - build:
-          filters:
-            branches:
-              only: master
-
 version: 2
 jobs:
   build:
@@ -50,3 +41,13 @@ jobs:
 
       # deploy
       - run: npx angular-cli-ghpages --dir=dist/TimeSheets3 --repo=https://GH_TOKEN@github.com/BjoernKW/TimeSheets3.git --name="BjoernKW" --email=bjoern@bjoernkw.com
+
+workflows:
+  version: 2
+  main:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
+              
