@@ -2,6 +2,15 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
+workflows:
+  version: 2
+  main:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
+
 version: 2
 jobs:
   build:
@@ -15,10 +24,6 @@ jobs:
       # - image: circleci/mongo:3.4.4
 
     working_directory: ~/repo
-
-    branches:
-      only:
-        - master
 
     steps:
       - checkout
