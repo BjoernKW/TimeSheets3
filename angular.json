@@ -33,8 +33,7 @@
             ],
             "scripts": [
               "src/assets/scripts/mite.js"
-            ],
-            "es5BrowserSupport": true
+            ]
           },
           "configurations": {
             "production": {
