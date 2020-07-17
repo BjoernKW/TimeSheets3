@@ -1,5 +1,7 @@
 # TimeSheets3
 
+[![CircleCI](https://circleci.com/gh/BjoernKW/TimeSheets3.svg?style=shield)](https://circleci.com/gh/BjoernKW/TimeSheets3)
+
 [Angular](https://angular.io/) 7+ version of https://github.com/BjoernKW/TimeSheets,
 a time sheet report generation tool for [mite](https://mite.yo.lk/).
 
