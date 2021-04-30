@@ -1,3 +1,7 @@
+.table td.no-wrap {
+  white-space: nowrap;
+}
+
 @media print {
   .do-not-print {
     display: none;

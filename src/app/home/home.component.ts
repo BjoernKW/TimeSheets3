@@ -130,6 +130,7 @@ export class HomeComponent implements OnInit {
                 {
                   userName: object.time_entry.user_name,
                   serviceName: object.time_entry.service_name,
+                  note: object.time_entry.note,
                   date: formattedDate,
                   hours: object.time_entry.minutes / 60
                 }
