@@ -14,6 +14,9 @@
     "e2e": "ng e2e"
   },
   "private": true,
+  "resolutions": {
+    "json-schema": "0.4.0"
+  },
   "dependencies": {
     "@angular/animations": "~13.1.1",
     "@angular/common": "~13.1.1",
@@ -49,6 +52,7 @@
     "karma-jasmine": "~4.0.1",
     "karma-jasmine-html-reporter": "^1.7.0",
     "npm-check-updates": "^12.0.5",
+    "npm-force-resolutions": "^0.0.10",
     "protractor": "~7.0.0",
     "ts-node": "~10.4.0",
     "tslint": "~6.1.0",
