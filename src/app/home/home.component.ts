@@ -74,10 +74,10 @@ export class HomeComponent implements OnInit {
 
     this._ngZone.run(() => {
       this.mite.Project.active(
-        data => {
-          const projects = [];
+        (data: any) => {
+          const projects: any[] = [];
           data.forEach(
-            object => {
+            (object: any) => {
               projects.push({ key: object.project.id, value: object.project.customer_name + ': ' + object.project.name });
             }
           );
@@ -103,7 +103,7 @@ export class HomeComponent implements OnInit {
     this._ngZone.run(() => {
       this.mite.Project.find(
         localStorage['project'],
-        data => {
+        (data: any) => {
           localStorage['projectName'] = data.project.customer_name + ': ' + data.project.name;
           localStorage['displayStartDate'] = HomeComponent.formatDateForDisplay(new Date(localStorage['startDate']));
           localStorage['displayEndDate'] = HomeComponent.formatDateForDisplay(new Date(localStorage['endDate']));
@@ -117,12 +117,12 @@ export class HomeComponent implements OnInit {
           from: localStorage['startDate'],
           to: localStorage['endDate']
         },
-        data => {
-          const timeEntries = [];
+        (data: any) => {
+          const timeEntries: any[] = [];
           this.totalMinutes = 0;
 
           data.forEach(
-            object => {
+            (object: any) => {
               const date = new Date(object.time_entry.date_at);
               const formattedDate = HomeComponent.formatDateForDisplay(date);
 
