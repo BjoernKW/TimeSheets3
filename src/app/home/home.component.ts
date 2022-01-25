@@ -19,8 +19,14 @@ export class HomeComponent implements OnInit {
 
   currentYear;
 
-  projects = [];
-  timeEntries = [];
+  projects: { key: string, value: string }[] = [];
+  timeEntries: {
+    userName: string,
+    serviceName: string,
+    note: string,
+    date: string,
+    hours: string
+  }[] = [];
 
   static formatDateForDisplay(date: Date) {
     return ('0' + date.getDate()).slice(-2) + '.' + ('0' + (date.getMonth() + 1)).slice(-2) + '.' + date.getFullYear();
