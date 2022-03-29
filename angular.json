@@ -104,6 +104,15 @@
               "src/assets"
             ]
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     },
@@ -127,5 +136,8 @@
       }
     }
   },
-  "defaultProject": "TimeSheets3"
+  "defaultProject": "TimeSheets3",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }

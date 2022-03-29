@@ -143,7 +143,7 @@
         <tr *ngFor="let timeEntry of timeEntries">
           <td class="no-wrap">{{ timeEntry.userName }}</td>
           <td>
-            {{ timeEntry.serviceName }}<span *ngIf="timeEntry.note && timeEntry.note != ''">: {{ timeEntry.note }}</span>
+            {{ timeEntry.serviceName }}<span *ngIf="timeEntry.note && timeEntry.note !== ''">: {{ timeEntry.note }}</span>
           </td>
           <td>{{ timeEntry.date }}</td>
           <td>{{ timeEntry.hours }}</td>

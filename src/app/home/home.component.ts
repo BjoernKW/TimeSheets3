@@ -1,4 +1,4 @@
-import { Component, NgZone, OnInit } from '@angular/core';
+import { Component, NgZone } from '@angular/core';
 
 declare var Mite: any;
 
@@ -7,7 +7,7 @@ declare var Mite: any;
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
   defaultDate: string;
   mite: any;
@@ -65,9 +65,6 @@ export class HomeComponent implements OnInit {
     if (!localStorage['language']) {
       localStorage['language'] = 'en';
     }
-  }
-
-  ngOnInit() {
   }
 
   login() {
