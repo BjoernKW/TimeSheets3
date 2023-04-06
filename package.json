@@ -19,7 +19,7 @@
     "json-schema": "0.4.0"
   },
   "dependencies": {
-    "@angular/animations": "^15.2.5",
+    "@angular/animations": "^15.2.6",
     "@angular/common": "^15.2.5",
     "@angular/compiler": "^15.2.5",
     "@angular/core": "^15.1.2",
