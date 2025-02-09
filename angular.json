@@ -74,18 +74,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "TimeSheets3:build"
+            "buildTarget": "TimeSheets3:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "TimeSheets3:build:production"
+              "buildTarget": "TimeSheets3:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "TimeSheets3:build"
+            "buildTarget": "TimeSheets3:build"
           }
         },
         "test": {
