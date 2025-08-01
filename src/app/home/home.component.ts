@@ -37,7 +37,7 @@ export class HomeComponent {
     return date.getFullYear() + '-' + ('0' + (date.getMonth() + 1)).slice(-2) + '-' + ('0' + date.getDate()).slice(-2);
   }
 
-  constructor(private _ngZone: NgZone) {
+  constructor(private readonly _ngZone: NgZone) {
     const today = new Date();
 
     this.defaultDate = HomeComponent.formatDate(today);
