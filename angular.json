@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": {
-              "base": "dist/TimeSheets3/browser"
+              "base": "dist/TimeSheets3"
             },
             "index": "src/index.html",
             "polyfills": [
