@@ -9,11 +9,11 @@ describe('HomeComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [
-        FormsModule
-      ],
-      declarations: [ HomeComponent ]
-    })
+    imports: [
+        FormsModule,
+        HomeComponent
+    ]
+})
     .compileComponents();
   }));
 

@@ -6,14 +6,12 @@ import { FormsModule } from "@angular/forms";
 describe('AppComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [
+    imports: [
         RouterTestingModule,
         FormsModule
-      ],
-      declarations: [
-        AppComponent
-      ],
-    }).compileComponents();
+    ],
+    declarations: [AppComponent],
+}).compileComponents();
   }));
 
   it('should create the app', () => {

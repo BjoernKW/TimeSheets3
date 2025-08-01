@@ -1,4 +1,6 @@
 import { Component, NgZone } from '@angular/core';
+import { NgClass } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 declare var Mite: any;
 
@@ -6,7 +8,7 @@ declare var Mite: any;
     selector: 'app-home',
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.scss'],
-    standalone: false
+    imports: [NgClass, FormsModule]
 })
 export class HomeComponent {
 
@@ -20,8 +22,12 @@ export class HomeComponent {
 
   currentYear;
 
-  projects: { key: string, value: string }[] = [];
+  projects: {
+    key: string,
+    value: string
+  }[] = [];
   timeEntries: {
+    id: number,
     userName: string,
     serviceName: string,
     note: string,
@@ -132,6 +138,7 @@ export class HomeComponent {
 
               timeEntries.push(
                 {
+                  id: object.time_entry.id,
                   userName: object.time_entry.user_name,
                   serviceName: object.time_entry.service_name,
                   note: object.time_entry.note,
